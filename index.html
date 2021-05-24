@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>tadashi masuda</title>
 </head>
+
 <body>
-    <h1>Mypage</h1>
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container-fluid">
+                <h3 class="navbar-brand">Tadashi Masuda</h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#基本情報">基本情報</a>
+                        <a class="nav-link"  href="#経歴">経歴</a>
+                        <a class="nav-link" href="#制作物">制作物</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3 class="col-md-6 mx-auto mt-5">基本情報</h3>
+            <div id="基本情報" class="col-md-6 mx-auto row">
+                <table class="col-md-8 mx-auto">
+                    <tbody>
+                      <tr>
+                        <td>氏名</td>
+                        <td>益田 匡史（Tadashi Masuda）</td>
+                      </tr>
+                      <tr>
+                        <td>生年月日</td>
+                        <td>1999/06/24</td>
+                      </tr>
+                      <tr>
+                        <td>Github</td>
+                        <td><a href="https://github.com/tadashimasuda">@tadashimasuda</a></td>
+                      </tr>
+                      <tr>
+                        <td>Wantedly</td>
+                        <td><a href="https://www.wantedly.com/id/tadashimasuda">益田匡史</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <h3 class="col-md-6 mx-auto mt-5">経歴</h3>
+            <div id="経歴" class="mt-5 col-md-6 mx-auto">
+                <dl>
+                    <dt>2022年4月</dt>
+                    <dd>
+                        <h2>未定</h2>
+                        <p></p>
+                    </dd>
+                    <dt class="pt-0">2022年3月</dt>
+                    <dd class="pt-0">
+                        <h2>工学院大学 情報学部システム数理学科 卒業予定 (2018年度入学)</h2>
+                        <p>研究室：インタラクティブメディア研究室</p>
+                    </dd>
+                </dl>
+            </div>
+            <h3 class="col-md-6 mx-auto">制作物</h3>
+            <div id="制作物" class="mt-5 col-md-6 mx-auto row">
+                <div class="col-md-5 bg-primary">
+                    a
+                </div>
+                <div class="col-md-5 offset-md-2 bg-dark">
+                    a
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+<style>
+    body * {
+  box-sizing: border-box;
+}
+body p {
+  line-height: 1.8;
+}
+
+body h1 {
+  font-size: 36px;
+  margin: 0 0 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+dl dt {
+  text-align: right;
+  width: 8.5em;
+  padding: 0.5em 1.0em 0.5em 0.5em;
+  position: relative;
+}
+
+dl dt::after {
+  content: '●';
+  position: absolute;
+  right: -0.55em;
+  top: -5px;
+  font-size: 18px;
+}
+
+dl dd {
+  width: calc(100% - 8.5em);
+  padding: 0.5em 2.0em 3.0em;
+  margin: 0;
+  border-left: 2px solid #ccc;
+}
+dl dd:last-child{
+    border-left: none;
+}
+dl dd h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+</style>
